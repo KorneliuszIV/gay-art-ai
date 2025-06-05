@@ -23,11 +23,12 @@ def get_client_ip():
 @app.route('/', methods=['GET', 'POST'])
 def home():
     if request.method == 'GET':
-        user_ip = get_client_ip()
-        submitted_ips.add(user_ip)
-        if user_ip in submitted_ips:
-            return "You have already submitted a rating!", 403
-        print(submitted_ips)
+        # blocking Ips - currently doesn't work
+        # user_ip = get_client_ip()
+        # submitted_ips.add(user_ip)
+        # print(submitted_ips)
+        # if user_ip in submitted_ips:
+        #     return "You have already submitted a rating!", 403
         return render_template('index.html')
     x1 = request.form.get('art1')
     x2 = request.form.get('art2')
