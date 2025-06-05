@@ -1,2 +1,5 @@
 venv
 .flaskenv
+app.db
+test.sql
+test.py
