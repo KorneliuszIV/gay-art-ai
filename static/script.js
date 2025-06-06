@@ -5,7 +5,7 @@ function updateRatingValue(val, num) {
 // Initialize with the default value
 document.addEventListener('DOMContentLoaded', init);
 
-const API_HOSTNAME = 'http://127.0.0.1:5000/';
+const API_HOSTNAME = 'https://gay-art-ai.onrender.com';
 async function getData() {
     const data = await fetch(API_HOSTNAME + `/level_data`)
     const j = await data.text()

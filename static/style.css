@@ -1,6 +1,8 @@
 .art-img{
     width: 300px;
+    max-width: 100%;
     height: auto;
+    overflow: hidden;
 }
 
 #canvas{
@@ -10,6 +12,20 @@
 
 body{
     width: 80%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.widget{
+    background-color: #FCECDD;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding: 1%;
+    margin: 5%;
+}
+
+.widget> input{
+    width: 70%;
+    object-fit: contain;
+
 }
